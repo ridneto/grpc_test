@@ -5,7 +5,10 @@ Teste básico aplicando grpc com golang;
 Para rodar local: go run cmd/server/server.go
 
 Debug com evans (https://github.com/ktr0731/evans):
-- Rodar ->  ```evans -r --host localhost --port 50051``` 
+- Rodar ->  ```bash
+evans -r --host localhost --port 50051
+``` 
+
 Garantir que o modo reflection esteja setado:
     reflection.Register(grpcServer)
 
@@ -16,4 +19,6 @@ Garantir que o modo reflection esteja setado:
 
 Compilar alterações classes proto
 
-```protoc --proto_path=proto proto/*.proto --go_out=pb --go-grpc_out=pb```
+```bash
+protoc --proto_path=proto proto/*.proto --go_out=pb --go-grpc_out=pb
+```
