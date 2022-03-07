@@ -5,3 +5,10 @@ Teste básico aplicando grpc com golang;
 // protoc --proto_path=proto proto/*.proto --go_out=pb --go-grpc_out=pb
 
 Para rodar local: go run cmd/server/server.go
+
+Para debug local:
+
+- Instalar evans (https://github.com/ktr0731/evans) 
+- Rodar evans -r --host localhost --port 50051 
+Garantir que o modo reflection esteja setado:
+    reflection.Register(grpcServer)
