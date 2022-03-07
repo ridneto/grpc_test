@@ -5,7 +5,9 @@ Teste básico aplicando grpc com golang;
 Para rodar local: go run cmd/server/server.go
 
 Debug com evans (https://github.com/ktr0731/evans):
-- Rodar ->  ```bash
+- Rodar ->  
+
+```bash
 evans -r --host localhost --port 50051
 ``` 
 
